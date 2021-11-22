@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/scttmars/Desktop/cs636-main/kernel/bfs.cpp
+cassert
+-
+iostream
+-
+csr.h
+/home/scttmars/Desktop/cs636-main/kernel/csr.h
+queue
+-
+
+/home/scttmars/Desktop/cs636-main/kernel/csr.h
+stdint.h
+/home/scttmars/Desktop/cs636-main/kernel/stdint.h
+
