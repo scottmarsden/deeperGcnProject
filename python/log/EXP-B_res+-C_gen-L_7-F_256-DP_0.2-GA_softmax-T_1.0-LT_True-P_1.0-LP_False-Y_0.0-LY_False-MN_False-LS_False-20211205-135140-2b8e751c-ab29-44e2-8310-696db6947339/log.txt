@@ -1,0 +1,127 @@
+2021-12-05 13:51:42,275 Namespace(add_virtual_node=False, batch_size=32, block='res+', conv='gen', conv_encode_edge=True, dataset='ogbg-molhiv', device=0, dropout=0.2, epochs=10, feature='full', gcn_aggr='softmax', grad_clip=0.0, graph_pooling='mean', hidden_channels=256, learn_msg_scale=False, learn_p=False, learn_t=True, learn_y=False, lr=0.0001, mlp_layers=1, model_load_path='ogbg_molhiv_pretrained_model.pth', model_save_path='log/EXP-B_res+-C_gen-L_7-F_256-DP_0.2-GA_softmax-T_1.0-LT_True-P_1.0-LP_False-Y_0.0-LY_False-MN_False-LS_False-20211205-135140-2b8e751c-ab29-44e2-8310-696db6947339/model_ckpt', msg_norm=False, norm='batch', num_layers=7, num_tasks=1, num_workers=0, p=1.0, save='log/EXP-B_res+-C_gen-L_7-F_256-DP_0.2-GA_softmax-T_1.0-LT_True-P_1.0-LP_False-Y_0.0-LY_False-MN_False-LS_False-20211205-135140-2b8e751c-ab29-44e2-8310-696db6947339', t=1.0, use_gpu=True, y=0.0)
+2021-12-05 13:51:43,971 DeeperGCN(
+  (gcns): ModuleList(
+    (0): GENConv(
+      (mlp): MLP(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (msg_encoder): ReLU()
+      (edge_encoder): BondEncoder(
+        (bond_embedding_list): ModuleList(
+          (0): Embedding(5, 256)
+          (1): Embedding(6, 256)
+          (2): Embedding(2, 256)
+        )
+      )
+    )
+    (1): GENConv(
+      (mlp): MLP(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (msg_encoder): ReLU()
+      (edge_encoder): BondEncoder(
+        (bond_embedding_list): ModuleList(
+          (0): Embedding(5, 256)
+          (1): Embedding(6, 256)
+          (2): Embedding(2, 256)
+        )
+      )
+    )
+    (2): GENConv(
+      (mlp): MLP(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (msg_encoder): ReLU()
+      (edge_encoder): BondEncoder(
+        (bond_embedding_list): ModuleList(
+          (0): Embedding(5, 256)
+          (1): Embedding(6, 256)
+          (2): Embedding(2, 256)
+        )
+      )
+    )
+    (3): GENConv(
+      (mlp): MLP(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (msg_encoder): ReLU()
+      (edge_encoder): BondEncoder(
+        (bond_embedding_list): ModuleList(
+          (0): Embedding(5, 256)
+          (1): Embedding(6, 256)
+          (2): Embedding(2, 256)
+        )
+      )
+    )
+    (4): GENConv(
+      (mlp): MLP(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (msg_encoder): ReLU()
+      (edge_encoder): BondEncoder(
+        (bond_embedding_list): ModuleList(
+          (0): Embedding(5, 256)
+          (1): Embedding(6, 256)
+          (2): Embedding(2, 256)
+        )
+      )
+    )
+    (5): GENConv(
+      (mlp): MLP(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (msg_encoder): ReLU()
+      (edge_encoder): BondEncoder(
+        (bond_embedding_list): ModuleList(
+          (0): Embedding(5, 256)
+          (1): Embedding(6, 256)
+          (2): Embedding(2, 256)
+        )
+      )
+    )
+    (6): GENConv(
+      (mlp): MLP(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (msg_encoder): ReLU()
+      (edge_encoder): BondEncoder(
+        (bond_embedding_list): ModuleList(
+          (0): Embedding(5, 256)
+          (1): Embedding(6, 256)
+          (2): Embedding(2, 256)
+        )
+      )
+    )
+  )
+  (norms): ModuleList(
+    (0): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (4): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (atom_encoder): AtomEncoder(
+    (atom_embedding_list): ModuleList(
+      (0): Embedding(119, 256)
+      (1): Embedding(4, 256)
+      (2): Embedding(12, 256)
+      (3): Embedding(12, 256)
+      (4): Embedding(10, 256)
+      (5): Embedding(6, 256)
+      (6): Embedding(6, 256)
+      (7): Embedding(2, 256)
+      (8): Embedding(2, 256)
+    )
+  )
+  (graph_pred_linear): Linear(in_features=256, out_features=1, bias=True)
+)
+2021-12-05 13:51:43,972 =====Epoch 1
+2021-12-05 13:51:43,972 Training...
+2021-12-05 13:52:44,713 Evaluating...
+2021-12-05 13:53:19,415 {'Train': 0.7197683844621702, 'Validation': 0.7354068685087205, 'Test': 0.6908688850692366}
+2021-12-05 13:53:19,416 Epoch 1, t [1.016032099723816, 1.0253193378448486, 1.010301947593689, 0.9924101233482361, 0.9922953844070435, 0.9930728673934937, 0.9822217226028442]
+2021-12-05 13:53:19,499 =====Epoch 2
+2021-12-05 13:53:19,500 Training...
+2021-12-05 13:54:18,000 Evaluating...
